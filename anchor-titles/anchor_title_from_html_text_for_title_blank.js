@@ -1,5 +1,5 @@
 jQuery.each(jQuery('a'), function(index, value) {
-    if (jQuery(value).attr('title') == '') {
+    if (jQuery(value).attr('title') == undefined || jQuery(value).attr('title') == '') {
         jQuery(value).attr('title', $(value).text());
     }
 });
